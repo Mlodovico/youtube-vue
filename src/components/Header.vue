@@ -1,11 +1,19 @@
 <!-- filename: Header.vue -->
 <script>
+import { addIcons, OhVueIcon } from 'oh-vue-icons';
+import { CoUser } from "oh-vue-icons/icons";
+
+addIcons(CoUser)
+
 export default {
     name: 'HeaderComponent',
     data() {
         return {
             search: ''
         }
+    },
+    components: {
+        'v-icon': OhVueIcon
     },
     methods: {
         onInput() {
@@ -71,7 +79,7 @@ export default {
                 </svg>
             </button>
             <button class="profile-button">
-                <v-icon name="CoUser" size="30" color="white" />
+                <v-icon name="CoUser" />
             </button>
         </div>
     </div>
@@ -96,6 +104,7 @@ export default {
     border: none;
     padding: 10px;
     background-color: rgb(30, 30, 30);
+    color: white;
 }
 
 .search-button {
