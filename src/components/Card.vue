@@ -4,21 +4,32 @@
             <p>Content</p>
         </div>
         <div class="text-content">
-            <p>Como fazer bolo de cenoura</p>
+            <div class="profile-wrapper"></div>
+            <div class="content">
+                <p class="title">{{ video.title }}</p>
+                <p class="author">{{ video.author }}</p>
+                <p class="description">{{ video.description }}</p>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'CardComponent'
+    name: 'CardComponent',
+    props: {
+        video: {
+            type: Object,
+            required: true
+        },
+    }
 }
 </script>
 
 <style>
 .card-wrapper {
     width: 300px;
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     background: black;
@@ -38,5 +49,20 @@ export default {
     color: white;
     font-weight: bold;
     padding: 10px;
+}
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.author {
+    font-size: 14px;
+    color: gray;
+}
+
+.description {
+    font-size: 12px;
+    color: gray;
 }
 </style>
