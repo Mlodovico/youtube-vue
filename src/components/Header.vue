@@ -146,7 +146,7 @@ export default {
 .separator {
     width: 100%;
     height: 2px;
-    margin-top: 15px;
+    margin: 15px 0px;
     border-radius: 12px;
     background-color: grey;
 }
