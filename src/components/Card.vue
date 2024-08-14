@@ -1,7 +1,7 @@
 <template>
     <div class="card-wrapper">
         <div class="video-content">
-            <p>Content</p>
+            <img :src="video.img" alt="">
         </div>
         <div class="text-content">
             <div class="profile-wrapper"></div>
@@ -37,11 +37,17 @@ export default {
 }
 
 .video-content {
+    display: flex;
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0 0;
 }
 
+.video-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
 .text-content {
     width: 100%;
     height: 50%;

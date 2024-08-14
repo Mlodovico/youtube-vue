@@ -1,0 +1,28 @@
+{
+  "video": [
+    {
+      "img": "https://picsum.photos/400/200",
+      "title": "Como fazer bolo de cenoura",
+      "author": "Murilo Lodovico",
+      "description": "Lorem ipsum"
+    },
+    {
+      "img": "https://picsum.photos/400/200",
+      "title": "12 dicas para melhorar na academia",
+      "author": "John Doe",
+      "description": "Lorem ipsum"
+    },
+    {
+      "img": "https://picsum.photos/400/200",
+      "title": "Treino de Peito amplificado para bodybuilders",
+      "author": "Joene Doe",
+      "description": "Lorem ipsum"
+    },
+    {
+      "img": "https://picsum.photos/400/200",
+      "title": "Como fazer bolo de morango",
+      "author": "Murilo Lodovico",
+      "description": "Lorem ipsum"
+    }
+  ]
+}
