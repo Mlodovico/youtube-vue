@@ -41,13 +41,13 @@ export default {
 <style scoped>
 .card-wrapper {
   display: flex;
-
   height: auto;
   flex-wrap: wrap;
 }
 
 .card-wrapper .card {
+  display: flex;
   flex: 1 1 calc(33.333% - 32px);
-  max-width: 200px;
+  width: 100%;
 }
 </style>
