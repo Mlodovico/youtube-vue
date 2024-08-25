@@ -1,8 +1,8 @@
 <script>
 import axios from 'axios';
 
-import HeaderComponent from './components/HeaderComponent.vue'
-import Card from './components/Card.vue'
+import HeaderComponent from './components/layout/HeaderComponent.vue'
+import Card from './components/common/Card.vue';
 
 export default {
   name: 'App',
