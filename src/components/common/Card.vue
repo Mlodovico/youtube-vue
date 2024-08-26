@@ -1,3 +1,15 @@
+<script>
+export default {
+    name: 'CardComponent',
+    props: {
+        video: {
+            type: Object,
+            required: true
+        },
+    }
+}
+</script>
+
 <template>
     <div class="card-wrapper">
         <div class="video-content">
@@ -13,23 +25,10 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    name: 'CardComponent',
-    props: {
-        video: {
-            type: Object,
-            required: true
-        },
-    }
-}
-</script>
-
 <style>
 .card-wrapper {
     width: 300px;
-    height: 200px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     background: black;
@@ -37,7 +36,6 @@ export default {
 }
 
 .video-content {
-    display: flex;
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0 0;

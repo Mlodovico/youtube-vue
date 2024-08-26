@@ -33,21 +33,33 @@ export default {
 
 <template>
   <HeaderComponent />
-  <div class="card-wrapper">
+  <div class="card-conteiner">
     <Card v-bind="video" v-for="video in videos" :key="video" :video="video" />
   </div>
 
 </template>
 <style scoped>
-.card-wrapper {
-  display: flex;
-  height: auto;
-  flex-wrap: wrap;
+.card-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (width >=1366px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media screen and (width <=900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (width <=600px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
 }
 
 .card-wrapper .card {
-  display: flex;
-  flex: 1 1 calc(33.333% - 32px);
-  width: 100%;
 }
 </style>

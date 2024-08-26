@@ -1,4 +1,3 @@
-<!-- filename: Header.vue -->
 <script>
 import { addIcons, OhVueIcon } from 'oh-vue-icons';
 import { CoUser } from "oh-vue-icons/icons";
