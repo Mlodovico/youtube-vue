@@ -2,6 +2,8 @@
 import { addIcons, OhVueIcon } from 'oh-vue-icons';
 import { CoUser } from "oh-vue-icons/icons";
 
+import InputComponent from '@/components/common/Input.vue';
+
 addIcons(CoUser)
 
 export default {
@@ -12,12 +14,8 @@ export default {
         }
     },
     components: {
+        InputComponent,
         'v-icon': OhVueIcon
-    },
-    methods: {
-        onInput() {
-            this.$emit('search', this.search)
-        }
     }
 }
 </script>
@@ -63,10 +61,7 @@ export default {
                 </svg>
             </svg>
         </div>
-        <div>
-            <input type="text" placeholder="Search" class="search" id="search" v-model="search" @input="onInput">
-            <button class="search-button">Search</button>
-        </div>
+        <InputComponent />
         <div class="functions-wrapper">
             <button class="notification-button">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
@@ -94,26 +89,6 @@ export default {
 
 .icon-wrapper {
     height: 30px;
-}
-
-.search {
-    width: 20vw;
-    border-radius: 10px 0 0 10px;
-    outline: none;
-    border: none;
-    padding: 10px;
-    background-color: rgb(30, 30, 30);
-    color: white;
-}
-
-.search-button {
-    border-radius: 0px 10px 10px 0px;
-    border: none;
-    padding: 10px 20px;
-    background-color: rgb(75, 75, 75);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .functions-wrapper {
