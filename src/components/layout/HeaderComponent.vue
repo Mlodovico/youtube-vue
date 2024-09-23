@@ -3,6 +3,7 @@ import { addIcons, OhVueIcon } from 'oh-vue-icons';
 import { CoUser } from "oh-vue-icons/icons";
 
 import InputComponent from '@/components/common/Input.vue';
+import SideBarCompoent from '@/components/layout/SideBarComponent.vue';
 
 addIcons(CoUser)
 
@@ -15,6 +16,7 @@ export default {
     },
     components: {
         InputComponent,
+        SideBarCompoent,
         'v-icon': OhVueIcon
     }
 }
@@ -23,6 +25,7 @@ export default {
 <template>
     <div class="header-wrapper">
         <div class="icon-wrapper">
+            <SideBarCompoent />
             <svg xmlns="http://www.w3.org/2000/svg" id="yt-logo-updated-svg_yt14" class="external-icon"
                 viewBox="0 0 90 20" focusable="false"
                 style="pointer-events: none; display: inherit; width: 100%; height: 100%;" aria-hidden="true">
