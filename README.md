@@ -1,18 +1,10 @@
-# youtube-vue-project
+# Youtube Vue Project
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository has the objective to build a different YouTube interface using Vue.js. In this project, the user can work with a local server and explore various technologies to enhance functionality.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Table of Contents
+ - [Dependencies](#Dependencies)
+ - [Language](#Language)
 
 ## Project Setup
 
@@ -54,8 +46,22 @@ npm run build
 npm run test:e2e
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Depedencies
 
-```sh
-npm run lint
-```
+ - **Yarn**
+ - **React**
+ - **Docker**
+ - **Node**
+
+## Language
+
+- TypeScript
+- Node Js
+- React Native
+- React
+
+## License
+
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+
