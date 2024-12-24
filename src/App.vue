@@ -35,15 +35,18 @@ export default {
 
 <template>
   <HeaderComponent />
+  
   <div class="treatment-card" v-if="!videos.length">
     <ErrorCard title="Something went wrong loading videos =(" />
   </div>
+  
   <div class="card-conteiner">
     <Card v-bind="video" v-for="video in videos" :key="video" :video="video" />
   </div>
-
 </template>
+
 <style scoped>
+
 .treatment-card {
   display: flex;
   justify-content: center;
@@ -71,6 +74,4 @@ export default {
   }
 }
 
-.card-wrapper .card {
-}
 </style>
